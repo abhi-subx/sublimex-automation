@@ -4,13 +4,16 @@
     <div class="topbar">
       <h1>SublimeX Automation Dashboard</h1>
 
-      <button @click="logout">
+      <button
+        data-testid="logout-button"
+        @click="logout"
+      >
         Logout
       </button>
     </div>
 
     <div class="card">
-      <h2>Welcome {{ user.name }}</h2>
+      <h2 data-testid="welcome-text">Welcome {{ user.name }}</h2>
 
       <p>Email : {{ user.email }}</p>
 

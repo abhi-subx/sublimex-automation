@@ -5,6 +5,7 @@
     <h1>Login</h1>
 
     <input
+        data-testid="email-input"
         v-model="email"
         placeholder="Email"
     />
@@ -12,6 +13,7 @@
     <br><br>
 
     <input
+        data-testid="password-input"
         v-model="password"
         type="password"
         placeholder="Password"
@@ -19,7 +21,10 @@
 
     <br><br>
 
-    <button @click="handleLogin">
+    <button
+        data-testid="login-button"
+        @click="handleLogin"
+    >
         Login
     </button>
 
